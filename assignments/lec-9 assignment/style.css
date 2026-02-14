@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7f7fb;
+  padding: 2rem;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Playground */
+.playground {
+  flex: 2;
+}
+
+.grandparent {
+  background-color: #ffb3b3;
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.parent {
+  background-color: #b3d9ff;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Labels */
+.label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-weight: bold;
+}
+
+.parent .label {
+  position: static;
+}
+
+/* Button */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+/* Event Log */
+.event-log {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-log h2 {
+  margin-bottom: 1rem;
+}
+
+.event-log ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.event-log li {
+  padding: 0.3rem 0;
+  color: #444;
+}
+
+.notes p {
+  font-size: 0.9rem;
+  color: #666;
+}

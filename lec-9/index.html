@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propogatiom</title>
+    <style>
+      div {
+        min-width: 100px;
+        min-height: 100px;
+        padding: 30px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grandparent" style="background-color: lightgreen"> grandparent
+      <div id="parent" style="background-color: lightcoral"> parent
+        <div id="child" style="background-color: khaki"> child</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
